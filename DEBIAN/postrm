@@ -1,0 +1,5 @@
+#!/bin/sh
+
+rm /usr/bin/authy
+
+exit 0
