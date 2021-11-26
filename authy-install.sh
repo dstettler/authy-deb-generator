@@ -28,7 +28,8 @@ prep () {
 	fi
 
 	mkdir "unsquashed"
-	unsquashfs -q -f -d "unsquashed" "${_snapid}_${_snaprev}.snap"
+	echo "Unpacking filesystem"
+	unsquashfs -f -d "unsquashed" "${_snapid}_${_snaprev}.snap"
 }
 
 setup () {
