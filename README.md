@@ -15,6 +15,6 @@ Also - this was designed to run on distros based on Ubuntu, so it may or may not
 Please make sure you can run these before running the script.
 
 I've tested this on the following distros:
-Ubuntu 20.04 LTS
-Ubuntu 18.04 LTS
-Debian 10 (buster) on ChromeOS x86_64
+- Ubuntu 20.04 LTS
+- Ubuntu 18.04 LTS
+- Debian 10 (buster) on ChromeOS x86_64
