@@ -90,8 +90,8 @@ ask_install() {
 	esac
 	
 	echo "Would you like to run the apt hook installer? (Y/n)"
-	read install
-	case $install in
+	read installhook
+	case $installhook in
 		"n")
 			exit 0
 			;;
