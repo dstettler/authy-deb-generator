@@ -89,20 +89,22 @@ ask_install() {
 			apt install ./${pkgname}.deb
 	esac
 	
-	echo "Would you like to run the apt hook installer? (Y/n)"
-	read installhook
-	case $installhook in
-		"n")
-			exit 0
-			;;
-		"N")
-			exit 0
-			;;
-		*)
-			cd "hook-stuff"
-			./install-hook.sh
-			;;
-	esac
+	if [ "$(ls -la /opt | grep "authy-deb-generator")" = ""]; then	
+		echo "Would you like to run the apt hook installer? (Y/n)"
+		read installhook
+		case $installhook in
+			"n")
+				exit 0
+				;;
+			"N")
+				exit 0
+				;;
+			*)
+				cd "hook-stuff"
+				./install-hook.sh
+				;;
+		esac
+	fi
 }
 
 prep
