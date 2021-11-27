@@ -26,19 +26,6 @@ else
 			;;
 		*)
 			./authy-install.sh
-			echo "Install snap package update now? (Y/n)"
-			read install
-			case $install in
-				"n")
-					exit 0
-					;;
-				"N")
-					exit 0
-					;;
-				*)
-					apt install ./authy.deb
-					;;
-			esac
 			;;
 	esac
 fi
