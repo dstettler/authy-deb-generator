@@ -21,6 +21,6 @@ I've tested this on the following distros:
 - Pop!\_OS 21.04
 
 ## `apt update` Hook
-Should you choose to install the `apt update` hook, `hook-stuff/install-hook.sh` will handle all installation and uninstallation. Make sure you ***do not*** move or remove the `authy-deb-generator` repository without first uninstalling the hook, as this could (and will) leave files stranded in your `apt.conf.d`, `/opt`, and `~/.config` folders.
+Should you choose to install the `apt update` hook, `hook-stuff/install-hook.sh` will handle all installation and uninstallation. Make sure you ***do not*** move or remove the `authy-deb-generator` repository without first uninstalling the hook, as this could (and will) leave files stranded in your `apt.conf.d` and `/opt` folders.
 
 Installing and uninstalling take less than a second and if you have to dig around that's on you.
