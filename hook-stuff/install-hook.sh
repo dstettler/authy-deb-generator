@@ -29,31 +29,31 @@ uninstall() {
 }
 
 if [ "$(ls -la "/etc/apt/apt.conf.d" | grep 05snap-check-update)" = "" ]; then
-	echo "Install the apt hook to check for updates? (y/N)"
+	echo "Install the apt hook to check for updates? (Y/n)"
 	read update
 	case $update in
-		"y")
-			install
+		"n")
+			exit 0
 			;;
-		"Y")
-			install
+		"N")
+			exit 0
 			;;
 		*)
-			exit 0
+			install
 			;;
 	esac
 else
-	echo "Uninstall the apt hook to check for updates? (y/N)"
+	echo "Uninstall the apt hook to check for updates? (Y/n)"
 	read update
 	case $update in
-		"y")
-			uninstall
+		"n")
+			exit 0
 			;;
-		"Y")
-			uninstall
+		"N")
+			exit 0
 			;;
 		*)
-			exit 0
+			uninstall
 			;;
 	esac
 fi
