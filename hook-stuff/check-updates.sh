@@ -2,7 +2,7 @@
 
 if [ 0 != $(id -u) ]; then echo "This script must be run as root."; exit 1; fi
 
-dir=$(<"~/.config/snap-check-update-pref")
+dir=$(<"/opt/authy-deb-generator/snap-check-update-pref")
 
 cd "$dir"
 
