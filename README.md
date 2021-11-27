@@ -18,3 +18,4 @@ I've tested this on the following distros:
 - Ubuntu 20.04 LTS
 - Ubuntu 18.04 LTS
 - Debian 10 (buster) on ChromeOS x86_64
+- Pop!\_OS 21.04
