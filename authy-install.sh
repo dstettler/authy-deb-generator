@@ -94,7 +94,7 @@ ask_install() {
 			;;
 		*)
 			cd "hook-stuff"
-			./install-hook
+			./install-hook.sh
 			;;
 	esac
 }
