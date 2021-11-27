@@ -38,18 +38,13 @@ setup () {
 
 	# Establish directory structure
 	mkdir "${pkgname}"
-	cd "${pkgname}"
-	mkdir "opt"
-	mkdir "usr"
-	cd "usr"
-	mkdir "bin"
-	mkdir "share"
-	cd "share"
-	mkdir "applications"
-	mkdir "pixmaps"
-	cd "../../opt"
-	mkdir "${pkgname}"
-	cd "../.."
+	mkdir "${pkgname}/opt"
+	mkdir "${pkgname}/usr"
+	mkdir "${pkgname}/usr/bin"
+	mkdir "${pkgname}/usr/share"
+	mkdir "${pkgname}/usr/share/applications"
+	mkdir "${pkgname}/usr/share/pixmaps"
+	mkdir "${pkgname}/opt/${pkgname}"
 	
 	# Copy package files to proper directories
 	cd "unsquashed"
