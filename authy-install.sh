@@ -82,6 +82,24 @@ package () {
 	rm "${_snapid}_${_snaprev}.snap"
 }
 
+ask_install() {
+	echo "Would you like to run the apt hook installer? (Y/n)"
+	read install
+	case $install in
+		"n")
+			exit 0
+			;;
+		"N")
+			exit 0
+			;;
+		*)
+			cd "hook-stuff"
+			./install-hook
+			;;
+	esac
+}
+
 prep
 setup
 package
+ask_install
