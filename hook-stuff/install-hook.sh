@@ -4,8 +4,6 @@ if [ 0 != $(id -u) ]; then echo "This script must be run as root."; exit 1; fi
 
 userhome=$(getent passwd $SUDO_USER | cut -d: -f6)
 
-echo $userhome
-
 install() {
 	# Hook and git directory
 	cp "05snap-check-update" "/etc/apt/apt.conf.d"
