@@ -78,6 +78,17 @@ package () {
 }
 
 ask_install() {
+	echo "Would you like to install now? (Y/n)"
+	read installdeb
+	case $installdeb in
+		"n")
+			;;
+		"N")
+			;;
+		*)
+			apt install ./${pkgname}.deb
+	esac
+	
 	echo "Would you like to run the apt hook installer? (Y/n)"
 	read install
 	case $install in
