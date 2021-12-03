@@ -50,7 +50,7 @@ setup () {
 	cd "unsquashed"
 	cp -rf * "../${pkgname}/opt/${pkgname}"
 	cp "meta/gui/icon.png" "../${pkgname}/usr/share/pixmaps/authy.png"
-	cp "meta/gui/authy.desktop" "../${pkgname}/usr/share/applications"
+	cp "../authy.desktop" "../${pkgname}/usr/share/applications"
 	cd ..
 
 	# Copy package-manager files and prep for packaging
