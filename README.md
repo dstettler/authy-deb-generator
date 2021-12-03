@@ -10,7 +10,7 @@ If an update comes out and I don't see it please make a PR and I should accept a
 ### NOTE
 This requires the following commands to be able to run: `unsquashfs`, `sha256sum`, `wget`, and `dpkg-deb`.
 
-Also - this was designed to run on distros based on Ubuntu, so it may or may not work on stock Debian, modify the dependencies in DEBIAN/control as you need to make it work.
+Also - this was designed to run on distros based on Ubuntu, so it may or may not work on stock Debian, modify the dependencies in `DEBIAN/control` as you need to make it work.
 
 Please make sure you can run these before running the script.
 
