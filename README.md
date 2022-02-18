@@ -7,6 +7,9 @@ Based on the AUR PKGBUILD with the same purpose.
 I'll try to keep this repo up to date but it's really only for personal purposes.
 If an update comes out and I don't see it please make a PR and I should accept as soon as I see the email.
 
+### Temporary Important Message
+Due to an incompatibility with `libc` I have modified the .desktop to run with the `--no-sandbox` flag as a temporary workaround. If you aren't comfortable with running a secure program in an unsecure environment, feel free to remove this flag before running the install script, though keep in mind you may have errors. As soon as the binary is updated to fix this issue I will remove it from the shortcut.
+
 ### NOTE
 This requires the following commands to be able to run: `unsquashfs`, `sha256sum`, `wget`, and `dpkg-deb`.
 
