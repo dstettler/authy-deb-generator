@@ -10,6 +10,8 @@ If an update comes out and I don't see it please make a PR and I should accept a
 ### Temporary Important Message
 Due to an incompatibility with `libc` I have modified the .desktop to run with the `--no-sandbox` flag as a temporary workaround. If you aren't comfortable with running a secure program in an unsecure environment, feel free to remove this flag before running the install script, though keep in mind you may have errors. As soon as the binary is updated to fix this issue I will remove it from the shortcut.
 
+See discussion [here](https://aur.archlinux.org/packages/authy) for updates from anyone who keeps up with this on the AUR.
+
 ### NOTE
 This requires the following commands to be able to run: `unsquashfs`, `sha256sum`, `wget`, and `dpkg-deb`.
 
