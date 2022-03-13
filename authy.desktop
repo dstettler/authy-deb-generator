@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Authy Desktop
-Exec=authy --no-sandbox
+Exec=authy
 Terminal=false
 Type=Application
 Icon=/usr/share/pixmaps/authy.png
