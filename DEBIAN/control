@@ -3,4 +3,4 @@ Version: 2.2.0
 Maintainer: devon.stettler@tutanota.com
 Architecture: all
 Description: Authy snap converted to .deb based on AUR PKGBUILD
-Depends: libnss3, libgtk-3-0, libxss1, libappindicator3-1
+Depends: libnss3, libgtk-3-0
