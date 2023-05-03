@@ -4,10 +4,10 @@ if [ 0 != $(id -u) ]; then echo "This script must be run as root."; exit 1; fi
 
 pkgname=authy
 _snapid="H8ZpNgIoPyvmkgxOWw5MSzsXK1wRZiHn"
-_snaprev="18"
+_snaprev="19"
 
 src="https://api.snapcraft.io/api/v1/snaps/download/${_snapid}_${_snaprev}.snap"
-sha256sums="b4f7dcb26e51c9551ed88b88a066eedd906848465288eedd6369983dfd1139bc  ${_snapid}_${_snaprev}.snap"
+sha256sums="58dfef718de47c5fc7419ee8a7221d0debd4e680d80c68ec852ed7554ef2ae3f  ${_snapid}_${_snaprev}.snap"
 
 prep () {
 	echo "Downloading snap"
