@@ -1,5 +1,5 @@
 Package: authy
-Version: 2.5.0
+Version: 2.2.3
 Maintainer: devon.stettler@tutanota.com
 Architecture: all
 Description: Authy snap converted to .deb based on AUR PKGBUILD
