@@ -1,5 +1,11 @@
 # authy-deb-generator
 
+## Note!
+Since authy has discontinued support for their desktop app I am no longer maintaining this. I'll leave the repo up and archived for posterity's sake, but if you have any questions/concerns
+about this project feel free to email me- I don't intend to de-archive it.
+
+<hr>
+
 Generates a .deb file from the current snap version of Authy.
 
 Based on the AUR PKGBUILD with the same purpose.
